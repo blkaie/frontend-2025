@@ -6,6 +6,7 @@
   <title>День 1 • Фронтенд 2025</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #0f0f1b;
@@ -14,21 +15,38 @@
       display: grid;
       place-items: center;
     }
+
     .card {
       background: #1a1a2e;
       padding: 4rem 3rem;
-      border-radius: 24…
+      border-radius: 24px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
       text-align: center;
     }
+
     h1 { 
-      font-size: 4rem; 
-      margin-bottom: 1rem; 
-      background: linear-gradient(90deg, #ff6b6b, #4ecdc4); 
-      -webkit-background-clip: text; 
-      -webkit-text-fill-color: transparent; 
+  font-size: 4rem; 
+  margin-bottom: 1rem; 
+
+  /* градиент */
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+
+  /* стандартное свойство */
+  background-clip: text;
+
+  /* поддержка Chrome/Safari */
+  -webkit-background-clip: text;
+
+  /* делаем текст прозрачным для эффекта */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+    p { 
+      font-size: 1.8rem; 
+      opacity: 0.9; 
     }
-    p { font-size: 1.8rem; opacity: 0.9; }
   </style>
 </head>
 <body>
